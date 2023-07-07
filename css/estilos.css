@@ -1,0 +1,696 @@
+body {
+
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+@font-face {
+    font-family: "Tommy";
+    src: url("./fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf");
+}
+
+@font-face {
+    font-family: "SilkyQueen";
+    src: url(./fonts/Silky\ Queen.otf);
+}
+
+header a img {
+    width: 20%;
+    height: 60%;
+}
+
+footer a img {
+    width: 2%;
+    height: 2%;
+}
+
+li {
+    font-family: "Tommy";
+    list-style: none;
+    font-size: 115%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 55.25%vw;
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline double 3px darkblue;
+}
+
+#ofertas h2 {
+    font-family: "Tommy";
+    font-size: 47.5%vw;
+    color: darkgreen;
+}
+
+#ofertas p {
+    font-size: 33.75%vw;
+    color: darkolivegreen;
+}
+
+.index section h2 {
+    font-family: "Tommy";
+    font-size: 47.5%vw;
+    color: darkred;
+}
+
+.index iframe a {
+    width: 45%;
+    height: 45%;
+}
+
+.blog h2 {
+    font-family: "Tommy";
+    font-size: 34%vw;
+    color: darkgreen;
+}
+
+.blog h3 {
+    font-family: "SilkyQueen";
+    font-size: 29.75%vw;
+    color: darkred;
+}
+
+.blog h4 {
+    font-size: 25.5%vw;
+    color: forestgreen;
+}
+
+.blog p {
+    font-size: 17%vw;
+}
+
+.blog li {
+    font-size: 21.25%vw;
+}
+
+#papas li {
+    color: darkred;
+}
+
+.blog img {
+    width: 10.5%;
+    height: 10.5%;
+}
+
+#papas img {
+    width: 15%;
+    height: 15%;
+}
+
+.servicios h2 {
+    font-family: "Tommy";
+    font-size: 34%vw;
+    color: greenyellow;
+}
+
+.servicios h3 {
+    font-family: "SilkyQueen";
+    font-size: 29.75%vw;
+    color: darkred;
+}
+
+.servicios p {
+    font-size: 17%vw;
+}
+
+.papas p {
+    font-size: 21.25%vw;
+    color: darkolivegreen;
+}
+
+.portafolio h2 {
+    font-family: "Tommy";
+    font-size: 34%vw;
+}
+
+.portafolio img {
+    width: 25%;
+    height: 25%;
+}
+
+.portafolio figcaption {
+    font-size: 17%vw;
+    color: darkred;
+}
+
+.contacto h2 {
+    font-family: "Tommy";
+    font-size: 29.75%vw;
+    color: darkgreen;
+}
+
+#reclamos {
+    text-align: center;
+}
+
+.servicios {
+    position: relative;
+}
+
+/* Estilos para el contenedor principal */
+
+header {
+    grid-column: 1 / -1;
+    padding: 20px;
+    background-color: salmon;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+header nav {
+
+    grid-column: 1 / -1;
+}
+
+nav ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+
+    display: inline;
+    margin-right: 10px;
+    margin: 2%;
+}
+
+nav ul li a {
+    text-decoration: underline wavy darkmagenta 2px;
+}
+
+nav a:visited {
+    color: darkred;
+}
+
+nav a:hover {
+    background-color: darkblue;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+button:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+/*estilos index*/
+.index {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: solid 3px royalblue;
+}
+
+
+.index img {
+    width: 45%;
+    height: 25%;
+}
+
+
+h1 {
+    margin-top: 0;
+}
+
+#ofertas {
+    width: 40%;
+    margin: 5%;
+    margin-bottom: 20px;
+}
+
+
+
+.index figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+.maps {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    border: dashed 3px darkred;
+}
+
+/* Estilos para el contenedor principal */
+.servicios {
+    width: 45%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+.servicios::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/Papas\ fritas\ backround.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    /* Ajusta el valor de opacidad según tus necesidades */
+    z-index: -1;
+}
+
+.servicios section {
+    margin-bottom: 20px;
+}
+
+.servicios h2 {
+    margin-top: 0;
+}
+
+.servicios ul {
+    padding: 0;
+    margin: 0;
+}
+
+.servicios li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.servicios img {
+    max-width: 100%;
+    height: auto;
+}
+
+.servicios form {
+    margin-top: 10px;
+}
+
+.servicios label {
+    display: block;
+}
+
+.servicios input[type="number"] {
+    width: 100px;
+}
+
+.servicios button[type="button"] {
+    margin-top: 10px;
+}
+
+/* Estilos adicionales específicos de tu página */
+.papas {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+section:last-child {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor principal */
+.portafolio {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px dashed royalblue;
+}
+
+
+.portafolio section {
+    margin-bottom: 20px;
+}
+
+.portafolio h2 {
+    margin-top: 0;
+    color: darkgreen;
+    text-decoration: underline 2px double darkgreen;
+    text-align: start;
+}
+
+.portafolio ul {
+    padding: 0;
+    margin: 0;
+}
+
+.portafolio ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.portafolio li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.portafolio img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portafolio figcaption {
+    margin-top: 10px;
+}
+
+button[type="button"] {
+    margin-top: 10px;
+}
+
+/* Estilos adicionales específicos de tu página */
+.portafolio article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.portafolio figure {
+    position: relative;
+}
+
+.portafolio figcaption {
+    position: relativ;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    color: black;
+    width: 68%;
+    margin-top: 4px;
+    border: 3px dashed darkred;
+}
+
+.portafolio figcaption:hover {
+    background-color: darkred;
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor principal de la sección de contacto */
+
+.contacto section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px double darkgreen;
+}
+
+.contacto section h2 {
+    margin-top: 0;
+}
+
+.contacto section form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.contacto section label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 2%;
+    text-decoration: underline solid black;
+}
+
+.contacto section label:hover {
+    background-color: #333;
+    color: greenyellow;
+}
+
+.contacto section input,
+.contacto section textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contacto section textarea {
+    resize: vertical;
+}
+
+.contacto section button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto section button:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+#reclamos {
+    border: double 5px darkred;
+}
+
+#reclamos h2 {
+    color: darkred;
+}
+
+/* Estilos para el contenedor principal */
+.blog {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid royalblue;
+}
+
+.blog section {
+    margin-bottom: 20px;
+}
+
+.blog h1 {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: underline double 3px darkblue;
+}
+
+.blog h2 {
+    margin-top: 0;
+    text-decoration: underline double 2px darkgreen;
+}
+
+.blog h3 {
+    margin-left: 2.5%;
+    text-decoration: underline double 2px darkred;
+}
+
+.blog ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog li {
+    border: 3px dotted darkred;
+    margin: 2%;
+}
+
+.blog img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog p {
+    margin: 2.5%;
+}
+
+.blog div {
+    margin-top: 20px;
+}
+
+.blog h4 {
+    margin: 0;
+}
+
+
+#papas li {
+    border: none;
+    text-decoration: underline solid darkred 2px;
+}
+
+
+
+footer {
+    grid-column: 1 / -1;
+    padding: 20px;
+    background-color: salmon;
+}
+
+footer a img {
+    width: 2%;
+}
+
+footer p {
+    font-size: 1.5em;
+}
+
+
+@media (max-width: 576px) {
+
+    /* Estilos para dispositivos móviles */
+    body {
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna en dispositivos móviles */
+    }
+
+    header a img {
+        width: 50%;
+        height: auto;
+    }
+
+    footer a img {
+        width: 10%;
+        height: auto;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #ofertas h2 {
+        font-size: 20px;
+    }
+
+    #ofertas p {
+        font-size: 15px;
+    }
+
+    .index section h2 {
+        font-size: 20px;
+    }
+
+    .index iframe a {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog h2 {
+        font-size: 20px;
+    }
+
+    .blog h3 {
+        font-size: 18px;
+    }
+
+    .blog h4 {
+        font-size: 16px;
+    }
+
+    .blog p {
+        font-size: 14px;
+    }
+
+    .blog li {
+        font-size: 16px;
+    }
+
+    #papas li {
+        font-size: 16px;
+    }
+
+    .blog img {
+        width: 30%;
+        height: auto;
+    }
+
+    #papas img {
+        width: 40%;
+        height: auto;
+    }
+
+    .servicios h2 {
+        font-size: 20px;
+    }
+
+    .servicios h3 {
+        font-size: 18px;
+    }
+
+    .servicios p {
+        font-size: 14px;
+    }
+
+    .papas p {
+        font-size: 16px;
+    }
+
+    .portafolio h2 {
+        font-size: 20px;
+    }
+
+    .portafolio img {
+        width: 50%;
+        height: auto;
+    }
+
+    .portafolio figcaption {
+        font-size: 14px;
+    }
+
+    .contacto h2 {
+        font-size: 18px;
+    }
+
+    .servicios {
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+
+    .portafolio {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 3px dashed royalblue;
+    }
+
+    .portafolio article {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 10px;
+    }
+}
