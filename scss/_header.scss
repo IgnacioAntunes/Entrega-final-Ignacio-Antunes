@@ -1,0 +1,67 @@
+header {
+    height: 250px;
+    grid-column: 1 / -1;
+    padding: 20px;
+    background-color: salmon;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    
+
+    img {
+        width: 20%;
+        height: 60%;
+        transform: rotate(-10deg);
+    }
+
+    nav {
+        grid-column: 1 / -1;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            li {
+                
+                font-family: "Tommy";
+                list-style: none;
+                font-size: 120%;
+                text-transform: uppercase;
+                display: inline;
+                margin-right: 10px;
+                margin: 2%;
+                &:visited{
+                    list-style: none;
+                    
+                }
+    
+                a {
+                    color: $primary-color;
+                    text-decoration: underline double $primary-color 2px;
+                    padding: 5px;
+                    &:visited{
+                        color:map-get($map: $colores, $key: color-secundario) ;
+                        text-decoration: 2px underline double map-get($map: $colores, $key: color-secundario);
+                    }
+                    &:hover {
+                        background-color: $primary-color;
+                        color: rgb(180, 218, 123);
+                        cursor: pointer;
+                        &:visited {
+                            background-color: map-get($map: $colores, $key:color-secundario );
+                                                                                    
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    }
+
+
+}
+

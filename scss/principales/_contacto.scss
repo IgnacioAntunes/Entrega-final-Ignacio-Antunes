@@ -1,0 +1,91 @@
+/* Estilos para contacto */
+.body_contacto{
+        border: 15px map-get($map: $colores, $key:color-secundario ) double;
+        margin-top: 2%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.9fr 1fr 1fr 0.5fr;
+    
+}
+.contacto {
+    
+    @include gridMain (); 
+    h2 {
+        font-family: "Tommy";
+        font-size: 29.75%vw;
+        color: map-get($map: $colores, $key:color-terciario );
+    }
+
+    section {
+
+        background-color: rgba(144, 238, 172, 0.788);
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 5px double map-get($map: $colores, $key:color-terciario );
+
+        h2 {
+            margin-top: 0;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 2%;
+            text-decoration: underline double black;
+            transition: background-color 0.5s;
+            transition: color 0.5s;
+            &:hover {
+                background-color: #333;
+                color: greenyellow;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+
+        input,
+        textarea {
+            width: 75%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        textarea {
+            border: 1px solid black;
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: color 0.5s;
+            &:hover {
+                color: greenyellow;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#reclamos {
+    border: double 5px map-get($map: $colores, $key:color-secundario );
+    text-align: center;
+    background-color: rgb(245, 154, 126);
+    h2 {
+        color: map-get($map: $colores, $key:color-secundario );
+    }
+}

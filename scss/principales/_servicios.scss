@@ -1,0 +1,92 @@
+/* Estilos para servicios*/
+.body_servicios{
+    border: 15px double map-get($map: $colores, $key:color-secundario );
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+.servicios {
+    @include gridMain (); 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 17%;
+    padding: 20px;
+    border: 4px map-get($map: $colores, $key:color-secundario ) solid;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/Papas\ fritas\ backround.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.7;
+        /* Ajusta el valor de opacidad según tus necesidades */
+        z-index: -1;
+    }
+
+    h2 {
+        font-family: "Tommy";
+        font-size: 34%vw;
+        color: rgb(9, 226, 38);
+        margin-top: 0;
+    }
+
+    h3 {
+        font-family: "SilkyQueen";
+        font-size: 29.75%vw;
+        color: map-get($map: $colores, $key:color-secundario );
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    form {
+        margin-top: 10px;
+
+        label {
+            display: block;
+        }
+
+        input[type="number"] {
+            width: 100px;
+        }
+
+        button[type="button"] {
+            margin-top: 10px;
+        }
+    }
+    .papas {
+        padding-top: 20px;
+    }
+}
+
+

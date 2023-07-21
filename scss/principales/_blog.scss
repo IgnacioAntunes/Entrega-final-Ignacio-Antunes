@@ -1,0 +1,81 @@
+/* Estilos para blog */
+
+.blog {
+    background-color: $secondary-color;
+    @include gridMain (); 
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 4px solid map-get($map: $colores, $key:color-primario );
+
+    h1 {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: underline double 3px $primary-color;
+    }
+
+    h2 {
+        font-family: "Tommy";
+        font-size: 34%vw;
+        color: map-get($map: $colores, $key:color-terciario );
+        margin-top: 0;
+        text-decoration: underline double 2px map-get($map: $colores, $key:color-terciario );
+    }
+
+    h3 {
+        margin-left: 2.5%;
+        text-decoration: underline double 2px map-get($map: $colores, $key:color-secundario );
+        font-family: "SilkyQueen";
+        font-size: 29.75%vw;
+        color: map-get($map: $colores, $key:color-secundario );
+    }
+
+    h4 {
+        font-size: 25.5%vw;
+        color: rgb(13, 114, 13);
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    div {
+        margin-top: 20px;
+    }
+
+    img {
+        width: 10.5%;
+        height: 10.5%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    p {
+        font-size: 17%vw;
+        margin: 2.5%;
+    }
+
+    li {
+        font-size: 21.25%vw;
+        border: 3px dotted map-get($map: $colores, $key:color-secundario );
+        margin: 2%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #papas {
+        li {
+            color: map-get($map: $colores, $key:color-secundario );
+            border: none;
+            text-decoration: underline solid map-get($map: $colores, $key:color-secundario ) 2px;
+        }
+
+        img {
+            width: 15%;
+            height: 15%;
+        }
+    }
+}

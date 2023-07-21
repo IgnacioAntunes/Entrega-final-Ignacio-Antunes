@@ -1,0 +1,59 @@
+/*estilos para index*/
+
+.index {    
+    @include gridMain ();        
+    margin-top: 2%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    @include center-flex ();
+    flex-wrap: wrap;
+    max-width: 700px;
+    border: solid 4px map-get($map: $colores, $key: color-primario );
+    background-color:$secondary-color ;
+
+    img {
+        width: 45%;
+        height: 25%;
+    }
+
+    figure {
+        transform: translate(-30px);
+        margin-left: 14%;
+        @include center-flex ();
+        flex-direction: column;
+        padding: 0;
+    }
+
+    h2 {
+        font-family: "Tommy";
+        font-size: 47.5%vw;
+        color: map-get($map: $colores, $key: color-secundario );
+    }
+
+    .maps {
+        transform: translate(-55px,-55px);
+        margin-bottom: 5%;
+        margin-left: 18%;
+        @include center-flex ();
+        flex-direction: column;
+    }
+}
+
+#ofertas {
+    width: 40%;
+    margin: 5%;
+    margin-bottom: 20px;
+
+    h2 {
+        font-family: "Tommy";
+        font-size: 50%vw;
+        color: map-get($map: $colores, $key:color-terciario );
+    }
+
+    p {
+        font-size: 50%vw;
+        color: map-get($map: $colores, $key:color-terciario );
+        text-transform: uppercase;
+    }
+}

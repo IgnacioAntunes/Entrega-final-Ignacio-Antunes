@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Estilos generales para la pagina */
+/* IMPORTS */
 @font-face {
   font-family: "Tommy";
   src: url("./fonts/MADE TOMMY Regular_PERSONAL USE.otf");
@@ -8,36 +8,17 @@
   font-family: "SilkyQueen";
   src: url(./fonts/Silky\ Queen.otf);
 }
+/* VARIABLES */ /* Estilos generales para la pagina */
 body {
-  background-color: burlywood;
+  background: linear-gradient(salmon, rgb(241, 141, 141));
+  border: 15px darkred double;
+  margin-top: 2%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  margin-left: 10%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-}
-
-header {
-  height: 280px;
-  grid-column: 1/-1;
-  padding: 20px;
-  background-color: salmon;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-}
-
-header a img {
-  width: 20%;
-  height: 60%;
-}
-
-li {
-  font-family: "Tommy";
-  list-style: none;
-  font-size: 115%;
-}
-
-li a {
-  text-decoration: none;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
 }
 
 h1 {
@@ -46,17 +27,9 @@ h1 {
   color: darkblue;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-decoration: underline double 3px darkblue;
   margin-top: 0;
-}
-
-main {
-  grid-column: span 3;
-  grid-row: span 4;
-}
-
-header nav {
-  grid-column: 1/-1;
 }
 
 nav ul {
@@ -66,25 +39,19 @@ nav ul {
   display: flex;
   justify-content: space-around;
 }
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-  margin: 2%;
-}
-
 nav ul li a {
-  text-decoration: underline double darkmagenta 2px;
+  padding: 5px;
+  transition: background-color 0.5s;
+  transition: color 0.6s;
 }
-
-nav a:visited {
-  color: darkred;
-}
-
-nav a:hover {
+nav ul li a:hover {
   background-color: darkblue;
-  color: greenyellow;
+  color: rgb(180, 218, 123);
   cursor: pointer;
+}
+nav ul li a:visited {
+  background-color: darkred;
+  text-decoration: underline double darkred;
 }
 
 button:hover {
@@ -97,164 +64,13 @@ footer {
   padding: 20px;
   background-color: salmon;
 }
-
-footer a img {
+footer img {
+  transform: translateY(4px);
   width: 2%;
   height: 2%;
 }
-
 footer p {
   font-size: 1.5em;
-}
-
-/*estilos para index*/
-.index {
-  margin-top: 2%;
-  margin-right: 25%;
-  margin-bottom: 2%;
-  margin-left: 25%;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 700px;
-  padding: 20px;
-  border: solid 3px royalblue;
-  background-color: lightsalmon;
-}
-
-.index img {
-  width: 45%;
-  height: 25%;
-}
-
-#ofertas {
-  width: 40%;
-  margin: 5%;
-  margin-bottom: 20px;
-}
-
-#ofertas h2 {
-  font-family: "Tommy";
-  font-size: 47.5% vw;
-  color: darkgreen;
-}
-
-#ofertas p {
-  font-size: 33.75% vw;
-  color: darkolivegreen;
-  text-transform: uppercase;
-}
-
-.index iframe a {
-  width: 45%;
-  height: 45%;
-}
-
-.index section h2 {
-  font-family: "Tommy";
-  font-size: 47.5% vw;
-  color: darkred;
-}
-
-.index figure {
-  margin-left: 14%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0;
-}
-
-.maps {
-  margin-bottom: 5%;
-  margin-left: 18%;
-  display: flex;
-  flex-direction: column;
-  border: dashed 3px darkred;
-}
-
-/* Estilos para servicios*/
-.servicios {
-  position: relative;
-  width: 45%;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-.servicios::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url(../img/Papas\ fritas\ backround.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.7;
-  /* Ajusta el valor de opacidad según tus necesidades */
-  z-index: -1;
-}
-
-.servicios h2 {
-  font-family: "Tommy";
-  font-size: 34% vw;
-  color: greenyellow;
-  margin-top: 0;
-}
-
-.servicios h3 {
-  font-family: "SilkyQueen";
-  font-size: 29.75% vw;
-  color: darkred;
-}
-
-.servicios p {
-  font-size: 17% vw;
-}
-
-.papas p {
-  font-size: 21.25% vw;
-  color: darkolivegreen;
-}
-
-.servicios section {
-  margin-bottom: 20px;
-}
-
-.servicios ul {
-  padding: 0;
-  margin: 0;
-}
-
-.servicios li {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.servicios img {
-  max-width: 100%;
-  height: auto;
-}
-
-.servicios form {
-  margin-top: 10px;
-}
-
-.servicios label {
-  display: block;
-}
-
-.servicios input[type=number] {
-  width: 100px;
-}
-
-.servicios button[type=button] {
-  margin-top: 10px;
-}
-
-.papas {
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
 }
 
 section:last-child {
@@ -269,18 +85,228 @@ button {
   cursor: pointer;
 }
 
+button[type=button] {
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  height: 250px;
+  grid-column: 1/-1;
+  padding: 20px;
+  background-color: salmon;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+header img {
+  width: 20%;
+  height: 60%;
+  transform: rotate(-10deg);
+}
+header nav {
+  grid-column: 1/-1;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  font-family: "Tommy";
+  list-style: none;
+  font-size: 120%;
+  text-transform: uppercase;
+  display: inline;
+  margin-right: 10px;
+  margin: 2%;
+}
+header nav ul li:visited {
+  list-style: none;
+}
+header nav ul li a {
+  color: darkblue;
+  text-decoration: underline double darkblue 2px;
+  padding: 5px;
+}
+header nav ul li a:visited {
+  color: darkred;
+  text-decoration: 2px underline double darkred;
+}
+header nav ul li a:hover {
+  background-color: darkblue;
+  color: rgb(180, 218, 123);
+  cursor: pointer;
+}
+header nav ul li a:hover:visited {
+  background-color: darkred;
+}
+
+/*estilos para index*/
+.index {
+  grid-column: span 3;
+  grid-row: span 4;
+  margin-top: 2%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+  border: solid 4px royalblue;
+  background-color: lightsalmon;
+}
+.index img {
+  width: 45%;
+  height: 25%;
+}
+.index figure {
+  transform: translate(-30px);
+  margin-left: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+.index h2 {
+  font-family: "Tommy";
+  font-size: 47.5% vw;
+  color: darkred;
+}
+.index .maps {
+  transform: translate(-55px, -55px);
+  margin-bottom: 5%;
+  margin-left: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#ofertas {
+  width: 40%;
+  margin: 5%;
+  margin-bottom: 20px;
+}
+#ofertas h2 {
+  font-family: "Tommy";
+  font-size: 50% vw;
+  color: darkgreen;
+}
+#ofertas p {
+  font-size: 50% vw;
+  color: darkgreen;
+  text-transform: uppercase;
+}
+
+/* Estilos para servicios*/
+.body_servicios {
+  border: 15px double darkred;
+  margin-top: 2%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  background-color: burlywood;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+
+.servicios {
+  grid-column: span 3;
+  grid-row: span 4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 17%;
+  padding: 20px;
+  border: 4px darkred solid;
+}
+.servicios::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/Papas\ fritas\ backround.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  /* Ajusta el valor de opacidad según tus necesidades */
+  z-index: -1;
+}
+.servicios h2 {
+  font-family: "Tommy";
+  font-size: 34% vw;
+  color: rgb(9, 226, 38);
+  margin-top: 0;
+}
+.servicios h3 {
+  font-family: "SilkyQueen";
+  font-size: 29.75% vw;
+  color: darkred;
+}
+.servicios section {
+  margin-bottom: 20px;
+}
+.servicios ul {
+  padding: 0;
+  margin: 0;
+}
+.servicios li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.servicios img {
+  max-width: 100%;
+  height: auto;
+}
+.servicios form {
+  margin-top: 10px;
+}
+.servicios form label {
+  display: block;
+}
+.servicios form input[type=number] {
+  width: 100px;
+}
+.servicios form button[type=button] {
+  margin-top: 10px;
+}
+.servicios .papas {
+  padding-top: 20px;
+}
+
 /* Estilos para portafolio*/
 .portafolio {
+  background-color: lightsalmon;
+  grid-column: span 3;
+  grid-row: span 4;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  border: 3px dashed royalblue;
+  border: 3px dashed darkred;
 }
-
 .portafolio section {
   margin-bottom: 20px;
 }
-
 .portafolio h2 {
   font-family: "Tommy";
   font-size: 34% vw;
@@ -289,44 +315,29 @@ button {
   text-decoration: underline 2px double darkgreen;
   text-align: start;
 }
-
-.portafolio ul {
-  padding: 0;
-  margin: 0;
-}
-
 .portafolio ul {
   padding: 0;
   margin: 0;
   display: flex;
 }
-
-.portafolio li {
+.portafolio ul li {
   list-style: none;
   margin-bottom: 20px;
 }
-
 .portafolio img {
   width: 25%;
   height: 25%;
   max-width: 100%;
   height: auto;
 }
-
-button[type=button] {
-  margin-top: 10px;
-}
-
 .portafolio article {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
 }
-
 .portafolio figure {
   position: relative;
 }
-
 .portafolio figcaption {
   position: relativ;
   bottom: 0;
@@ -338,80 +349,85 @@ button[type=button] {
   border: 3px dashed darkred;
   font-size: 17% vw;
   color: darkred;
+  transition: background-color 0.5s;
 }
-
 .portafolio figcaption:hover {
   background-color: darkred;
   color: #fff;
   cursor: pointer;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+/* Estilos para contacto */
+.body_contacto {
+  border: 15px darkred double;
+  margin-top: 2%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.9fr 1fr 1fr 0.5fr;
 }
 
-/* Estilos para contacto */
+.contacto {
+  grid-column: span 3;
+  grid-row: span 4;
+}
 .contacto h2 {
   font-family: "Tommy";
   font-size: 29.75% vw;
   color: darkgreen;
 }
-
 .contacto section {
+  background-color: rgba(144, 238, 172, 0.788);
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   border: 5px double darkgreen;
 }
-
 .contacto section h2 {
   margin-top: 0;
 }
-
 .contacto section form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   align-items: center;
 }
-
 .contacto section label {
   display: block;
   font-size: 1.2em;
   margin-bottom: 2%;
-  text-decoration: underline solid black;
+  text-decoration: underline double black;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
 }
-
 .contacto section label:hover {
   background-color: #333;
   color: greenyellow;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-
 .contacto section input,
 .contacto section textarea {
   width: 75%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 4px;
 }
-
 .contacto section textarea {
+  border: 1px solid black;
   resize: vertical;
 }
-
 .contacto section button[type=submit] {
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: color 0.5s;
 }
-
-.contacto section button:hover {
+.contacto section button[type=submit]:hover {
   color: greenyellow;
   cursor: pointer;
 }
@@ -419,26 +435,27 @@ button {
 #reclamos {
   border: double 5px darkred;
   text-align: center;
+  background-color: rgb(245, 154, 126);
 }
-
 #reclamos h2 {
   color: darkred;
 }
 
 /* Estilos para blog */
 .blog {
+  background-color: lightsalmon;
+  grid-column: span 3;
+  grid-row: span 4;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  border: 3px solid royalblue;
+  border: 4px solid royalblue;
 }
-
 .blog h1 {
   display: flex;
   justify-content: flex-start;
   text-decoration: underline double 3px darkblue;
 }
-
 .blog h2 {
   font-family: "Tommy";
   font-size: 34% vw;
@@ -446,7 +463,6 @@ button {
   margin-top: 0;
   text-decoration: underline double 2px darkgreen;
 }
-
 .blog h3 {
   margin-left: 2.5%;
   text-decoration: underline double 2px darkred;
@@ -454,55 +470,43 @@ button {
   font-size: 29.75% vw;
   color: darkred;
 }
-
 .blog h4 {
   font-size: 25.5% vw;
-  color: forestgreen;
+  color: rgb(13, 114, 13);
 }
-
 .blog section {
   margin-bottom: 20px;
 }
-
 .blog div {
   margin-top: 20px;
 }
-
 .blog img {
   width: 10.5%;
   height: 10.5%;
   max-width: 100%;
   height: auto;
 }
-
 .blog p {
   font-size: 17% vw;
   margin: 2.5%;
 }
-
 .blog li {
   font-size: 21.25% vw;
   border: 3px dotted darkred;
   margin: 2%;
 }
-
 .blog ul {
   list-style-type: none;
   padding: 0;
 }
-
-#papas li {
+.blog #papas li {
   color: darkred;
-}
-
-#papas img {
-  width: 15%;
-  height: 15%;
-}
-
-#papas li {
   border: none;
   text-decoration: underline solid darkred 2px;
+}
+.blog #papas img {
+  width: 15%;
+  height: 15%;
 }
 
 @media (max-width: 576px) {
@@ -553,16 +557,22 @@ button {
   .blog li {
     font-size: 16px;
   }
-  #papas li {
-    font-size: 16px;
-  }
   .blog img {
     width: 30%;
     height: auto;
   }
-  #papas img {
+  .blog #papas li {
+    font-size: 16px;
+  }
+  .blog #papas img {
     width: 40%;
     height: auto;
+  }
+  .servicios {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
   }
   .servicios h2 {
     font-size: 20px;
@@ -573,8 +583,11 @@ button {
   .servicios p {
     font-size: 14px;
   }
-  .papas p {
-    font-size: 16px;
+  .portafolio {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px dashed royalblue;
   }
   .portafolio h2 {
     font-size: 20px;
@@ -585,21 +598,6 @@ button {
   }
   .portafolio figcaption {
     font-size: 14px;
-  }
-  .contacto h2 {
-    font-size: 18px;
-  }
-  .servicios {
-    width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-  .portafolio {
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 3px dashed royalblue;
   }
   .portafolio article {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

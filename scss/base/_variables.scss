@@ -1,0 +1,19 @@
+/* VARIABLES */
+$colores:(
+    color-primario:royalblue,
+    color-secundario:darkred,
+    color-terciario:darkgreen,
+);
+
+@mixin gridMain{
+    grid-column: span 3;
+    grid-row: span 4;
+}
+@mixin center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$primary-color:darkblue;
+$secondary-color:lightsalmon;
+
