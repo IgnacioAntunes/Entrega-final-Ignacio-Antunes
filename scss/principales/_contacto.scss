@@ -1,6 +1,6 @@
 /* Estilos para contacto */
 .body_contacto{
-        border: 15px map-get($map: $colores, $key:color-secundario ) double;
+        border: 15px $primary-color double;
         margin-top: 2%;
         margin-right: 10%;
         margin-bottom: 2%;
@@ -65,10 +65,11 @@
             border: 1px solid black;
             resize: vertical;
         }
-
+        
         button[type="submit"] {
+
             padding: 10px 20px;
-            background-color: #333;
+            background-color: map-get($map: $colores, $key:color-terciario );
             color: #fff;
             border: none;
             cursor: pointer;
@@ -85,6 +86,20 @@
     border: double 5px map-get($map: $colores, $key:color-secundario );
     text-align: center;
     background-color: rgb(245, 154, 126);
+
+    button[type="submit"] {
+        padding: 10px 20px;
+        background-color: map-get($map: $colores, $key:color-secundario );
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: color 0.5s;
+        &:hover {
+            color: greenyellow;
+            cursor: pointer;
+        }
+    }
+
     h2 {
         color: map-get($map: $colores, $key:color-secundario );
     }

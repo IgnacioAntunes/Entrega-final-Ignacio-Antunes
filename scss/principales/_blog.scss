@@ -14,13 +14,6 @@
         text-decoration: underline double 3px $primary-color;
     }
 
-    h2 {
-        font-family: "Tommy";
-        font-size: 34%vw;
-        color: map-get($map: $colores, $key:color-terciario );
-        margin-top: 0;
-        text-decoration: underline double 2px map-get($map: $colores, $key:color-terciario );
-    }
 
     h3 {
         margin-left: 2.5%;
@@ -36,36 +29,44 @@
     }
 
     section {
+
         margin-bottom: 20px;
-    }
 
-    div {
-        margin-top: 20px;
-    }
+        h2 {
+            font-family: "Tommy";
+            font-size: 34%vw;
+            color: map-get($map: $colores, $key:color-terciario );
+            margin-top: 0;
+            text-decoration: underline double 2px map-get($map: $colores, $key:color-terciario );
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                font-size: 21.25%vw;
+                border: 3px dotted map-get($map: $colores, $key:color-secundario );
+                margin: 2%;
+            }
+        
+    
+        }
+    
 
-    img {
-        width: 10.5%;
-        height: 10.5%;
-        max-width: 100%;
-        height: auto;
-    }
 
-    p {
-        font-size: 17%vw;
-        margin: 2.5%;
+        div {
+            
+            text-align: center  ;
+            margin-top: 20px;
+            
+        }
+        p {
+            font-size: 17%vw;
+            margin: 2.5%;
+            font-weight: 800;
+        }
+    
     }
-
-    li {
-        font-size: 21.25%vw;
-        border: 3px dotted map-get($map: $colores, $key:color-secundario );
-        margin: 2%;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
     #papas {
         li {
             color: map-get($map: $colores, $key:color-secundario );
@@ -78,4 +79,8 @@
             height: 15%;
         }
     }
+    section:last-child {
+        text-align: center;
+    }
+    
 }

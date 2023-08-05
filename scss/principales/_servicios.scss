@@ -1,11 +1,10 @@
 /* Estilos para servicios*/
 .body_servicios{
-    border: 15px double map-get($map: $colores, $key:color-secundario );
+    border: 15px double $primary-color;
     margin-top: 2%;
     margin-right: 10%;
     margin-bottom: 2%;
     margin-left: 10%;
-    background-color: burlywood;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
@@ -15,12 +14,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    text-align: center;
     width: 60%;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 17%;
-    padding: 20px;
-    border: 4px map-get($map: $colores, $key:color-secundario ) solid;
+    padding: 40px;
+    border: 2px map-get($map: $colores, $key:color-secundario ) solid;
 
     &::before {
         content: "";
@@ -40,8 +40,9 @@
     h2 {
         font-family: "Tommy";
         font-size: 34%vw;
-        color: rgb(9, 226, 38);
+        color: map-get($map: $colores, $key:color-terciario );
         margin-top: 0;
+        text-decoration: underline solid 3px map-get($map: $colores, $key:color-terciario ) ;
     }
 
     h3 {
@@ -60,6 +61,7 @@
     }
 
     li {
+        border: dotted 3px map-get($map: $colores, $key:color-secundario );
         list-style: none;
         margin-bottom: 20px;
     }
@@ -71,8 +73,12 @@
 
     form {
         margin-top: 10px;
+        padding-bottom: 20px;
 
         label {
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-top: 5%;
             display: block;
         }
 

@@ -1,134 +1,233 @@
 @media (max-width: 576px) {
 
     /* Estilos para dispositivos móviles */
+    .body_servicios{
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        border: none;
+        grid-template-columns: 1fr;
+    }
+    
+    .body_contacto{
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        border: none;
+        grid-template-columns: 1fr;
+    }
+
     body {
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        border: none;
         grid-template-columns: 1fr;
         /* Cambia a una sola columna en dispositivos móviles */
-    }
-
-    header a img {
-        width: 50%;
-        height: auto;
-    }
-
-    footer a img {
-        width: 10%;
-        height: auto;
-    }
-
-    li {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-    #ofertas {
-        h2 {
-            font-size: 20px;
+        header{
+            padding-bottom: 20px;
+            margin-top: 0%;
+            margin-right: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            border: $primary-color 3px solid;
+            
+            img {
+                width: 50%;
+                height: auto;
+            }
         }
 
-        p {
-            font-size: 15px;
-        }
-    }
+        .index {
+            border: $primary-color 3px solid;
+            margin-top: 0%;
+            margin-right: 0%;
+            margin-bottom: 2%;
+            margin-left: 0%;
+            img{
+                width: 70%;
+                margin-right: 5%;
+            }
+            section {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+            
+            video{
+                margin-left: 5%;
+                width: 80%;
+                height: 100%
+            }
+            figure{
+                @include center-flex ();
+                flex-direction: column;
+            }
+            figcaption{
+                margin-left: 10%;
+                width: 400px;
+            }
+            .maps iframe{
+                width: 350px;
+                height: 50%;
+                margin-left: 5%;
+                margin-bottom: 10%;
 
-    .index {
-        section {
+            }
+        }
+
+        #ofertas {
+            width: 400px;
+            h2 {
+                font-size: 30px;
+            }
+    
+            p {
+                font-size: 25px;
+            }
+        }
+        .servicios {
+            border: $primary-color 3px solid;
+            margin-top: 2%;
+            margin-right: 0%;
+            margin-bottom: 2%;
+            margin-left: 10%;
+            text-align: center;
+            form{
+                @include center-flex ();
+                flex-direction: column;
+            }
             h2 {
                 font-size: 20px;
             }
-        }
-
-        iframe {
-            a {
-                width: 100%;
-                height: auto;
+    
+            h3 {
+                font-size: 18px;
+            }
+    
+            p {
+                font-size: 14px;
             }
         }
-    }
 
-    .blog {
-        h2 {
-            font-size: 20px;
+        .portafolio {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px dashed royalblue;
+            
+            h2 {
+                font-size: 20px;
+            }
+    
+            img {
+                width: 70%;
+                height: auto;
+            }
+            
+            figure{
+                margin-right: 2%;
+                text-align: center;
+                
+            figcaption {
+                font-size: 14px;
+                width: 83%;
+            }
+            
+
+            }
+
+    
+            article {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-gap: 10px;
+
+                button{
+                    margin-left: 35%;
+                }
+            }
+    
+
         }
 
-        h3 {
-            font-size: 18px;
-        }
-
-        h4 {
-            font-size: 16px;
-        }
-
-        p {
-            font-size: 14px;
-        }
-
-        li {
-            font-size: 16px;
-        }
-
-        img {
-            width: 30%;
-            height: auto;
-        }
-
-        #papas {
+        .blog {
+            h2 {
+                font-size: 20px;
+            }
+    
+            h3 {
+                font-size: 18px;
+            }
+    
+            h4 {
+                font-size: 16px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+    
             li {
                 font-size: 16px;
             }
-
+    
             img {
-                width: 40%;
+                width: 30%;
                 height: auto;
             }
+    
+            #papas {
+                li {
+                    font-size: 16px;
+                }
+    
+                img {
+                    width: 40%;
+                    height: auto;
+                }
+            }
         }
+
+        footer{
+            border:$primary-color 3px solid;
+            img {
+                transform: translateY(5px);
+                width: 6%;
+                height: 10%;
+                }
+        }
+
+
+        li {
+        font-size: 16px;
+        }   
+
+        h1 {
+        font-size: 25px;
+        }
+
     }
 
-    .servicios {
-        width: 100%;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
 
-        h2 {
-            font-size: 20px;
-        }
 
-        h3 {
-            font-size: 18px;
-        }
 
-        p {
-            font-size: 14px;
-        }
-    }
 
-    .portafolio {
-        h2 {
-            font-size: 20px;
-        }
 
-        img {
-            width: 50%;
-            height: auto;
-        }
 
-        figcaption {
-            font-size: 14px;
-        }
 
-        article {
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            grid-gap: 10px;
-        }
 
-        max-width: 100%;
-        margin: 20px auto;
-        padding: 20px;
-        border: 3px dashed royalblue;
-    }
+
+
+
+
+
+
+
+
+
+
 
 }

@@ -1,102 +1,115 @@
 /* Estilos generales para la pagina */
 
 body {
-    background: linear-gradient(salmon, rgb(241, 141, 141));
-    border: 15px map-get($map: $colores, $key:color-secundario ) double;
+    background: lightsalmon;
+    border: 15px $primary-color double;
     margin-top: 2%;
-    margin-right: 10%;
+    margin-right: 15%;
     margin-bottom: 2%;
-    margin-left: 10%;
+    margin-left: 15%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
-}
+    font-family: "Tommy";
+    
+    h1 {
+        text-transform: uppercase;
+        font-size: 55.25%vw;
+        color: $primary-color;
+        @include center-flex ();
+        text-decoration: underline double 3px $primary-color;
+        margin-top: 0;
+    }
+
+    h3 {
+        font-family: "SilkyQueen";
+    }
 
 
-h1 {
-    text-transform: uppercase;
-    font-size: 55.25%vw;
-    color: $primary-color;
-    @include center-flex ();
-    text-decoration: underline double 3px $primary-color;
-    margin-top: 0;
-}
 
-
-nav {
-    ul {
-
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-        
-
-        li {            
-
-
-            a {
-                padding: 5px;
-                transition: background-color 0.5s;
-                transition: color 0.6s;
-                &:hover {
-                    background-color: $primary-color;
-                    color: rgb(180, 218, 123);
-                    cursor: pointer;
-                }
-
-                &:visited {
-                    background-color: map-get($map: $colores, $key:color-secundario );
-                    text-decoration: underline double map-get($map: $colores, $key: color-secundario);
-                                                                            
+    nav {
+        ul {
+    
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+    
+    
+            li {
+                
+    
+                a {
+                    font-family: "SilkyQueen";
+                    padding: 5px;
+                    transition: background-color 0.5s;
+                    transition: color 0.6s;
+    
+                    &:hover {
+                        background-color: $primary-color;
+                        color: rgb(180, 218, 123);
+                        cursor: pointer;
+                    }
+    
+                    &:visited {
+                        background-color: map-get($map: $colores, $key: color-secundario);
+                        text-decoration: underline double map-get($map: $colores, $key: color-secundario);
+    
+                    }
                 }
             }
         }
     }
-}
-
-button:hover {
-    color: greenyellow;
-    cursor: pointer;
-}
-
-footer {
-    grid-column: 1 / -1;
-    padding: 20px;
-    background-color: salmon;
-
-    img {
-        transform: translateY(4px);
-        width: 2%;
-        height: 2%;
+    button:hover {
+        color: greenyellow;
+        cursor: pointer;
     }
 
-    p {
-        font-size: 1.5em;
+    footer {
+        border-top: $primary-color 2px solid;
+        grid-column: 1 / -1;
+        padding: 20px;
+        background-color: coral;
+    
+        img {
+            transform: translateY(4px);
+            width: 2%;
+            height: 2%;
+        }
+    
+        p {
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+
+
+        
     }
+    
 }
-
-section:last-child {
-    text-align: center;
-}
-
 button {
-    padding: 10px 20px;
-    background-color: #333;
+    padding: 10px;
+    background-color: map-get($map: $colores, $key: color-secundario);
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 button[type="button"] {
     margin-top: 10px;
 }
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+section:last-child {
+    text-align: center;
 }
+
+
+
+
+
+
+
+
+
+

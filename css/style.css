@@ -10,18 +10,18 @@
 }
 /* VARIABLES */ /* Estilos generales para la pagina */
 body {
-  background: linear-gradient(salmon, rgb(241, 141, 141));
-  border: 15px darkred double;
+  background: lightsalmon;
+  border: 15px darkblue double;
   margin-top: 2%;
-  margin-right: 10%;
+  margin-right: 15%;
   margin-bottom: 2%;
-  margin-left: 10%;
+  margin-left: 15%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  font-family: "Tommy";
 }
-
-h1 {
+body h1 {
   text-transform: uppercase;
   font-size: 55.25% vw;
   color: darkblue;
@@ -31,80 +31,77 @@ h1 {
   text-decoration: underline double 3px darkblue;
   margin-top: 0;
 }
-
-nav ul {
+body h3 {
+  font-family: "SilkyQueen";
+}
+body nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-around;
 }
-nav ul li a {
+body nav ul li a {
+  font-family: "SilkyQueen";
   padding: 5px;
   transition: background-color 0.5s;
   transition: color 0.6s;
 }
-nav ul li a:hover {
+body nav ul li a:hover {
   background-color: darkblue;
   color: rgb(180, 218, 123);
   cursor: pointer;
 }
-nav ul li a:visited {
+body nav ul li a:visited {
   background-color: darkred;
   text-decoration: underline double darkred;
 }
-
-button:hover {
+body button:hover {
   color: greenyellow;
   cursor: pointer;
 }
-
-footer {
+body footer {
+  border-top: darkblue 2px solid;
   grid-column: 1/-1;
   padding: 20px;
-  background-color: salmon;
+  background-color: coral;
 }
-footer img {
+body footer img {
   transform: translateY(4px);
   width: 2%;
   height: 2%;
 }
-footer p {
+body footer p {
   font-size: 1.5em;
-}
-
-section:last-child {
-  text-align: center;
+  font-weight: normal;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #333;
+  padding: 10px;
+  background-color: darkred;
   color: #fff;
   border: none;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 button[type=button] {
   margin-top: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+section:last-child {
+  text-align: center;
 }
 
 header {
   height: 250px;
   grid-column: 1/-1;
   padding: 20px;
-  background-color: salmon;
+  background-color: coral;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
+  border-bottom: darkblue 3px solid;
 }
 header img {
   width: 20%;
@@ -156,17 +153,17 @@ header nav ul li a:hover:visited {
 .index {
   grid-column: span 3;
   grid-row: span 4;
-  margin-top: 2%;
-  margin-right: 20%;
+  margin-top: 0%;
+  margin-right: 10%;
   margin-bottom: 2%;
-  margin-left: 20%;
+  margin-left: 17%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   max-width: 700px;
-  border: solid 4px royalblue;
-  background-color: lightsalmon;
+  border: solid 4px darkblue;
+  background-color: coral;
 }
 .index img {
   width: 45%;
@@ -181,12 +178,30 @@ header nav ul li a:hover:visited {
   flex-direction: column;
   padding: 0;
 }
+.index figure video {
+  height: 300px;
+  width: 500px;
+}
+.index figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  text-align: center;
+  color: darkgreen;
+  font-weight: 800;
+  border: double darkgreen;
+  padding: 1%;
+}
 .index h2 {
   font-family: "Tommy";
   font-size: 47.5% vw;
   color: darkred;
 }
 .index .maps {
+  text-decoration: underline double darkred;
   transform: translate(-55px, -55px);
   margin-bottom: 5%;
   margin-left: 18%;
@@ -197,29 +212,34 @@ header nav ul li a:hover:visited {
 }
 
 #ofertas {
+  padding-top: 0%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  border: dashed 3px darkgreen;
   width: 40%;
   margin: 5%;
-  margin-bottom: 20px;
 }
 #ofertas h2 {
+  width: 115%;
   font-family: "Tommy";
-  font-size: 50% vw;
-  color: darkgreen;
-}
-#ofertas p {
   font-size: 50% vw;
   color: darkgreen;
   text-transform: uppercase;
 }
+#ofertas p {
+  font-size: 50% vw;
+  color: darkgreen;
+  font-weight: 1000;
+}
 
 /* Estilos para servicios*/
 .body_servicios {
-  border: 15px double darkred;
+  border: 15px double darkblue;
   margin-top: 2%;
   margin-right: 10%;
   margin-bottom: 2%;
   margin-left: 10%;
-  background-color: burlywood;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
@@ -231,12 +251,13 @@ header nav ul li a:hover:visited {
   position: relative;
   display: flex;
   flex-direction: column;
+  text-align: center;
   width: 60%;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 17%;
-  padding: 20px;
-  border: 4px darkred solid;
+  padding: 40px;
+  border: 2px darkred solid;
 }
 .servicios::before {
   content: "";
@@ -255,8 +276,9 @@ header nav ul li a:hover:visited {
 .servicios h2 {
   font-family: "Tommy";
   font-size: 34% vw;
-  color: rgb(9, 226, 38);
+  color: darkgreen;
   margin-top: 0;
+  text-decoration: underline solid 3px darkgreen;
 }
 .servicios h3 {
   font-family: "SilkyQueen";
@@ -271,6 +293,7 @@ header nav ul li a:hover:visited {
   margin: 0;
 }
 .servicios li {
+  border: dotted 3px darkred;
   list-style: none;
   margin-bottom: 20px;
 }
@@ -280,8 +303,12 @@ header nav ul li a:hover:visited {
 }
 .servicios form {
   margin-top: 10px;
+  padding-bottom: 20px;
 }
 .servicios form label {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 5%;
   display: block;
 }
 .servicios form input[type=number] {
@@ -296,7 +323,7 @@ header nav ul li a:hover:visited {
 
 /* Estilos para portafolio*/
 .portafolio {
-  background-color: lightsalmon;
+  background-color: coral;
   grid-column: span 3;
   grid-row: span 4;
   max-width: 800px;
@@ -343,7 +370,6 @@ header nav ul li a:hover:visited {
   bottom: 0;
   left: 0;
   padding: 5px;
-  color: black;
   width: 68%;
   margin-top: 4px;
   border: 3px dashed darkred;
@@ -359,7 +385,7 @@ header nav ul li a:hover:visited {
 
 /* Estilos para contacto */
 .body_contacto {
-  border: 15px darkred double;
+  border: 15px darkblue double;
   margin-top: 2%;
   margin-right: 10%;
   margin-bottom: 2%;
@@ -421,7 +447,7 @@ header nav ul li a:hover:visited {
 }
 .contacto section button[type=submit] {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: darkgreen;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -437,13 +463,25 @@ header nav ul li a:hover:visited {
   text-align: center;
   background-color: rgb(245, 154, 126);
 }
+#reclamos button[type=submit] {
+  padding: 10px 20px;
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+#reclamos button[type=submit]:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
 #reclamos h2 {
   color: darkred;
 }
 
 /* Estilos para blog */
 .blog {
-  background-color: lightsalmon;
+  background-color: coral;
   grid-column: span 3;
   grid-row: span 4;
   max-width: 800px;
@@ -455,13 +493,6 @@ header nav ul li a:hover:visited {
   display: flex;
   justify-content: flex-start;
   text-decoration: underline double 3px darkblue;
-}
-.blog h2 {
-  font-family: "Tommy";
-  font-size: 34% vw;
-  color: darkgreen;
-  margin-top: 0;
-  text-decoration: underline double 2px darkgreen;
 }
 .blog h3 {
   margin-left: 2.5%;
@@ -477,27 +508,30 @@ header nav ul li a:hover:visited {
 .blog section {
   margin-bottom: 20px;
 }
-.blog div {
-  margin-top: 20px;
+.blog section h2 {
+  font-family: "Tommy";
+  font-size: 34% vw;
+  color: darkgreen;
+  margin-top: 0;
+  text-decoration: underline double 2px darkgreen;
 }
-.blog img {
-  width: 10.5%;
-  height: 10.5%;
-  max-width: 100%;
-  height: auto;
+.blog section ul {
+  list-style-type: none;
+  padding: 0;
 }
-.blog p {
-  font-size: 17% vw;
-  margin: 2.5%;
-}
-.blog li {
+.blog section ul li {
   font-size: 21.25% vw;
   border: 3px dotted darkred;
   margin: 2%;
 }
-.blog ul {
-  list-style-type: none;
-  padding: 0;
+.blog section div {
+  text-align: center;
+  margin-top: 20px;
+}
+.blog section p {
+  font-size: 17% vw;
+  margin: 2.5%;
+  font-weight: 800;
 }
 .blog #papas li {
   color: darkred;
@@ -508,100 +542,183 @@ header nav ul li a:hover:visited {
   width: 15%;
   height: 15%;
 }
+.blog section:last-child {
+  text-align: center;
+}
 
 @media (max-width: 576px) {
   /* Estilos para dispositivos móviles */
+  .body_servicios {
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    border: none;
+    grid-template-columns: 1fr;
+  }
+  .body_contacto {
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    border: none;
+    grid-template-columns: 1fr;
+  }
   body {
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    border: none;
     grid-template-columns: 1fr;
     /* Cambia a una sola columna en dispositivos móviles */
   }
-  header a img {
+  body header {
+    padding-bottom: 20px;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    border: darkblue 3px solid;
+  }
+  body header img {
     width: 50%;
     height: auto;
   }
-  footer a img {
-    width: 10%;
-    height: auto;
+  body .index {
+    border: darkblue 3px solid;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: 2%;
+    margin-left: 0%;
   }
-  li {
-    font-size: 16px;
+  body .index img {
+    width: 70%;
+    margin-right: 5%;
   }
-  h1 {
+  body .index section h2 {
+    font-size: 20px;
+  }
+  body .index video {
+    margin-left: 5%;
+    width: 80%;
+    height: 100%;
+  }
+  body .index figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .index figcaption {
+    margin-left: 10%;
+    width: 400px;
+  }
+  body .index .maps iframe {
+    width: 350px;
+    height: 50%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+  body #ofertas {
+    width: 400px;
+  }
+  body #ofertas h2 {
+    font-size: 30px;
+  }
+  body #ofertas p {
     font-size: 25px;
   }
-  #ofertas h2 {
+  body .servicios {
+    border: darkblue 3px solid;
+    margin-top: 2%;
+    margin-right: 0%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  body .servicios form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .servicios h2 {
     font-size: 20px;
   }
-  #ofertas p {
-    font-size: 15px;
-  }
-  .index section h2 {
-    font-size: 20px;
-  }
-  .index iframe a {
-    width: 100%;
-    height: auto;
-  }
-  .blog h2 {
-    font-size: 20px;
-  }
-  .blog h3 {
+  body .servicios h3 {
     font-size: 18px;
   }
-  .blog h4 {
-    font-size: 16px;
-  }
-  .blog p {
+  body .servicios p {
     font-size: 14px;
   }
-  .blog li {
-    font-size: 16px;
-  }
-  .blog img {
-    width: 30%;
-    height: auto;
-  }
-  .blog #papas li {
-    font-size: 16px;
-  }
-  .blog #papas img {
-    width: 40%;
-    height: auto;
-  }
-  .servicios {
-    width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-  .servicios h2 {
-    font-size: 20px;
-  }
-  .servicios h3 {
-    font-size: 18px;
-  }
-  .servicios p {
-    font-size: 14px;
-  }
-  .portafolio {
+  body .portafolio {
     max-width: 100%;
     margin: 20px auto;
     padding: 20px;
     border: 3px dashed royalblue;
   }
-  .portafolio h2 {
+  body .portafolio h2 {
     font-size: 20px;
   }
-  .portafolio img {
-    width: 50%;
+  body .portafolio img {
+    width: 70%;
     height: auto;
   }
-  .portafolio figcaption {
-    font-size: 14px;
+  body .portafolio figure {
+    margin-right: 2%;
+    text-align: center;
   }
-  .portafolio article {
+  body .portafolio figure figcaption {
+    font-size: 14px;
+    width: 83%;
+  }
+  body .portafolio article {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 10px;
+  }
+  body .portafolio article button {
+    margin-left: 35%;
+  }
+  body .blog h2 {
+    font-size: 20px;
+  }
+  body .blog h3 {
+    font-size: 18px;
+  }
+  body .blog h4 {
+    font-size: 16px;
+  }
+  body .blog p {
+    font-size: 14px;
+  }
+  body .blog li {
+    font-size: 16px;
+  }
+  body .blog img {
+    width: 30%;
+    height: auto;
+  }
+  body .blog #papas li {
+    font-size: 16px;
+  }
+  body .blog #papas img {
+    width: 40%;
+    height: auto;
+  }
+  body footer {
+    border: darkblue 3px solid;
+  }
+  body footer img {
+    transform: translateY(5px);
+    width: 6%;
+    height: 10%;
+  }
+  body li {
+    font-size: 16px;
+  }
+  body h1 {
+    font-size: 25px;
   }
 }
 

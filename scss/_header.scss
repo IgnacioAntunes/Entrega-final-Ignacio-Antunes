@@ -2,10 +2,11 @@ header {
     height: 250px;
     grid-column: 1 / -1;
     padding: 20px;
-    background-color: salmon;
+    background-color: coral;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;
+    border-bottom: $primary-color 3px solid;
     
 
     img {
