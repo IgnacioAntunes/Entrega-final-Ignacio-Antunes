@@ -66,6 +66,7 @@ body footer {
   background-color: burlywood;
 }
 body footer img {
+  margin-left: 3%;
   transform: translateY(4px);
   width: 2%;
   height: 2%;
@@ -154,7 +155,8 @@ header nav ul li a:hover {
   color: darkred;
 }
 .body_index .maps iframe {
-  margin-bottom: 10%;
+  margin-bottom: 22%;
+  margin-left: 10%;
 }
 
 /* Estilos para servicios*/
@@ -451,9 +453,13 @@ header nav ul li a:hover {
   padding: 0;
 }
 .blog section ul li {
+  display: flex;
   font-size: 21.25% vw;
   border: 3px dotted darkred;
   margin: 2%;
+}
+.blog section ul li p {
+  margin-top: 10%;
 }
 .blog section div {
   text-align: center;
@@ -464,15 +470,23 @@ header nav ul li a:hover {
   margin: 2.5%;
   font-weight: 800;
 }
+.blog #papas {
+  display: flex;
+  flex-direction: column;
+}
 .blog #papas li {
+  margin: 5%;
+  margin-left: 30%;
+  width: 500px;
   border: none;
 }
 .blog #papas img {
+  align-self: center;
   width: 15%;
   height: 15%;
 }
 .blog section:last-child {
-  text-align: center;
+  align-items: center;
 }
 
 @media (max-width: 576px) {

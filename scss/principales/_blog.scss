@@ -7,7 +7,7 @@
     margin: 20px auto;
     padding: 20px;
     border: 4px solid $primary-color;
-
+    
     h1 {
         display: flex;
         justify-content: flex-start;
@@ -44,9 +44,13 @@
             list-style-type: none;
             padding: 0;
             li {
+                display: flex;
                 font-size: 21.25%vw;
                 border: 3px dotted map-get($map: $colores, $key:color-secundario );
                 margin: 2%;
+                p{
+                    margin-top: 10%;
+                }
             }
         
     
@@ -68,19 +72,25 @@
     
     }
     #papas {
+        display: flex;
+        flex-direction: column;
         li {
-            
+            margin: 5%;
+            margin-left: 30%;
+            width: 500px;
             border: none;
 
         }
 
         img {
+            align-self: center;
             width: 15%;
             height: 15%;
         }
+        
     }
     section:last-child {
-        text-align: center;
+        align-items: center;
     }
     
 }
