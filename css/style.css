@@ -11,7 +11,6 @@
 /* VARIABLES */ /* Estilos generales para la pagina */
 body {
   background: burlywood;
-  border: 15px darkblue double;
   margin-top: 2%;
   margin-right: 15%;
   margin-bottom: 2%;
@@ -148,6 +147,9 @@ header nav ul li a:hover {
   border: none;
   font-family: "Tommy";
 }
+.body_index #video {
+  width: 400px;
+}
 .body_index #ofertas {
   border: darkred dashed 3px;
 }
@@ -155,13 +157,13 @@ header nav ul li a:hover {
   color: darkred;
 }
 .body_index .maps iframe {
+  padding: 0px;
   margin-bottom: 22%;
   margin-left: 10%;
 }
 
 /* Estilos para servicios*/
 .body_servicios {
-  border: 15px double darkblue;
   margin-top: 2%;
   margin-right: 10%;
   margin-bottom: 2%;
@@ -253,11 +255,16 @@ header nav ul li a:hover {
   background-color: burlywood;
   grid-column: span 3;
   grid-row: span 4;
-  margin: 20px auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+.portafolio .zapatillas {
+  margin-right: 55%;
+}
+.portafolio .buttonz {
+  margin-right: 85%;
 }
 .portafolio section {
   margin-bottom: 20px;
@@ -280,7 +287,7 @@ header nav ul li a:hover {
   margin-bottom: 20px;
 }
 .portafolio img {
-  width: 35%;
+  width: 65%;
   height: 35%;
   height: auto;
 }

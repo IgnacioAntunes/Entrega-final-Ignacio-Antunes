@@ -3,11 +3,16 @@
 .portafolio {
     background-color: $secondary-color;
     @include gridMain (); 
-    margin: 20px auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    .zapatillas{
+        margin-right: 55%;
+    }
+    .buttonz{
+        margin-right: 85%;
+    }
     section {
         margin-bottom: 20px;
     }
@@ -32,7 +37,7 @@
     }
 
     img {
-        width: 35%;
+        width: 65%;
         height: 35%;
         height: auto;
     }
@@ -46,6 +51,7 @@
     figure {
         position: relative;
     }
+
     .remeras{
         width: 75%;
     }

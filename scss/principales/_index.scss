@@ -4,7 +4,9 @@
     grid: none;
     border: none;
     font-family: "Tommy";
-    
+    #video{
+        width: 400px;
+    }
     #ofertas{
         border: darkred dashed 3px ;
     }
@@ -13,6 +15,7 @@
     }
     .maps{
         iframe{
+            padding: 0px;
             margin-bottom: 22%;
             margin-left: 10%;
         }
