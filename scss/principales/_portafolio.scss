@@ -3,11 +3,11 @@
 .portafolio {
     background-color: $secondary-color;
     @include gridMain (); 
-    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border: 3px dashed map-get($map: $colores, $key:color-secundario );
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     section {
         margin-bottom: 20px;
     }
@@ -16,8 +16,8 @@
         font-family: "Tommy";
         font-size: 34%vw;
         margin-top: 0;
-        color: map-get($map: $colores, $key:color-terciario );
-        text-decoration: underline 2px double map-get($map: $colores, $key:color-terciario );
+        color: map-get($map: $colores, $key:color-secundario );
+        text-decoration: underline 2px double map-get($map: $colores, $key:color-secundario );
         text-align: start;
     }
 
@@ -25,7 +25,6 @@
         padding: 0;
         margin: 0;
         display: flex;
-
         li {
             list-style: none;
             margin-bottom: 20px;
@@ -33,9 +32,8 @@
     }
 
     img {
-        width: 25%;
-        height: 25%;
-        max-width: 100%;
+        width: 35%;
+        height: 35%;
         height: auto;
     }
 
@@ -48,13 +46,15 @@
     figure {
         position: relative;
     }
-
+    .remeras{
+        width: 75%;
+    }
     figcaption {
         position: relativ;
         bottom: 0;
         left: 0;
         padding: 5px;
-        width: 68%;
+        width: 50%;
         margin-top: 4px;
         border: 3px dashed map-get($map: $colores, $key:color-secundario );
         font-size: 17%vw;

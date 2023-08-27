@@ -1,7 +1,7 @@
 /* Estilos generales para la pagina */
 
 body {
-    background: lightsalmon;
+    background: $secondary-color;
     border: 15px $primary-color double;
     margin-top: 2%;
     margin-right: 15%;
@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    font-family: "Tommy";
+    font-family: "Tommy"; 
     
     h1 {
         text-transform: uppercase;
@@ -54,7 +54,6 @@ body {
     
                     &:visited {
                         background-color: map-get($map: $colores, $key: color-secundario);
-                        text-decoration: underline double map-get($map: $colores, $key: color-secundario);
     
                     }
                 }
@@ -70,7 +69,7 @@ body {
         border-top: $primary-color 2px solid;
         grid-column: 1 / -1;
         padding: 20px;
-        background-color: coral;
+        background-color:$secondary-color;
     
         img {
             transform: translateY(4px);

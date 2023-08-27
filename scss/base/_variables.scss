@@ -1,8 +1,6 @@
 /* VARIABLES */
 $colores:(
-    color-primario:royalblue,
-    color-secundario:darkred,
-    color-terciario:darkgreen,
+    color-secundario:darkred
 );
 
 @mixin gridMain{
@@ -15,5 +13,5 @@ $colores:(
     align-items: center;
 }
 $primary-color:darkblue;
-$secondary-color: coral;
+$secondary-color: burlywood;
 

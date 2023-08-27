@@ -20,7 +20,7 @@
     margin-bottom: 2%;
     margin-left: 17%;
     padding: 40px;
-    border: 2px map-get($map: $colores, $key:color-secundario ) solid;
+    border: 2px $primary-color solid;
 
     &::before {
         content: "";
@@ -40,15 +40,15 @@
     h2 {
         font-family: "Tommy";
         font-size: 34%vw;
-        color: map-get($map: $colores, $key:color-terciario );
         margin-top: 0;
-        text-decoration: underline solid 3px map-get($map: $colores, $key:color-terciario ) ;
+        
     }
 
     h3 {
+        width: 200px;
+        margin-left: 35%;
         font-family: "SilkyQueen";
         font-size: 29.75%vw;
-        color: map-get($map: $colores, $key:color-secundario );
     }
 
     section {
@@ -83,11 +83,13 @@
         }
 
         input[type="number"] {
-            width: 100px;
+            width: 50px;
+            height: 25px;
         }
 
         button[type="button"] {
-            margin-top: 10px;
+            height: 30px;
+            padding: 1%;
         }
     }
     .papas {
